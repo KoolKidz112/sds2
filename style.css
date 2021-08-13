@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: burlywood;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+#textbox {
+  display: inline-block;
+  position: absolute;
+  border: 2px solid black;
+  width: 50vw;
+  height: 15vh;
+  bottom: 10%;
+  transform: translateX(50%);
+  background-color: whitesmoke;
+  padding: 5px;
+  z-index: 999;
+}
+
+#text {
+  height: 0.1vh;
+  line-height: 2.9vh;
+  font-size: 2vh;
+  text-align: left;
+}
+
+a#inv {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+a#inv:hover {
+  font-weight: normal;
+  font-size: 25pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#inventory {
+  position: absolute;
+  display: grid;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.slot {
+  margin: 7px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  grid-row: 1 / 1;
+  padding: 5px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.slot img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.r2 {
+  grid-row: 2 / 2;
+}
+.r3 {
+  grid-row: 3 / 3;
+}
+.r4 {
+  grid-row: 4 / 4;
+}
+.r5 {
+  grid-row: 5 / 5;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#infobox {
+  position: absolute;
+  transform: translate(50%, 50%);
+  cursor: pointer;
+}
+
+.blur {
+  width: 50vw;
+  height: 35vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+#infobox strong {
+  position: absolute;
+  font-size: 20pt;
+  color: white;
+  transform: translate(25px, 25px);
+  z-index: 1;
+}
+
+.hidereal {
+  display: none;
+}
+
+#portrait img {
+  position: absolute;
+  transform: translate(100%);
+}
